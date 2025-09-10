@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+	  font-size: .85rem; 
+    }
+
+    .navbar {
+      background-color: #ADD8E6;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #0000FF;
+      text-align: center;
+      padding: 5px 10px;
+      text-decoration: none;
+    }
+	.navbar h1 {
+		margin-left: 10px;
+		text-shadow: 1px 1px grey;
+		color: blue;
+	}
+    .navbar a:hover {
+      background-color: #ADD8E6;
+	  text-shadow: 1px 1px grey;
+      color: orangered;
+    }
+
+    .menu-icon {
+      display: none;
+      float: right;
+      padding: 10px 15px;
+      color: #f2f2f2;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar a {
+        display: none;
+        float: none;
+        width: 100%;
+        text-align: left;
+      }
+
+      .navbar.responsive .menu-items a {
+        display: block;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+	.card {
+      display: flex;
+	  background: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+	  border: 2px solid steelblue;
+	  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	}
+	.card-content {
+		width: 80%;
+		padding: 15px 25px;
+		line-height: 2em;
+	    text-align: justify;
+    }
+	 .card img {
+			width: 172px;
+			height: 172px;
+			border-radius: 8px;
+			box-shadow: 1px 1px 2px orangered;
+			object-fit: cover;
+	}
+	 footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+ </style>
+</head>
+<body>
+  <div class="navbar" id="navbar">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <h1> Speak Easily! </h1>
+	<div class="menu-items">
+      <a href="#intro">Introduction</a>
+      <a href="#tenses">Tenses</a>
+      <a href="#advanced">Advanced Grammar</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("navbar");
+      nav.classList.toggle("responsive");
+    }
+  </script>
+
+  <section class="section" id="top">
+  <div class="card">
+	 <figure>
+	 <img src="smalltg.jpg">
+	 <figcaption style="text-align:center; color:orangered;"> !! પ્રારંભિક પરિચય !! </figcaption>
+	 </figure>
+	 <div class="card-content">	
+	   <p>નમસ્કાર.. હું રાકેશ સર, ગુજરાતી ભાષાનો ઉપયોગ કરી કઈ રીતે આપણે અંગ્રેજી ભાષા સરળ રીતે બોલી શકીએ છીએ તે વિશેની સરળ અને નક્કર ટેક્નિક આપને શીખવીશ.
+		મારા છેલ્લા 25 વર્ષના અનુભવ થી ગુજરાતી બોલનારા ભાઈ અને બહેનોને સહજ જણાવવાનું કે આપણે શિક્ષણ માં આગળ છીએ પરંતુ એક અંગેજી ભાષા પર ની એક સારી પકડ ના અભાવે 
+		Career - Interview માં Presentation માં અને Foreign ઉચ્ચ અભ્યાસક્રમ માટે પાછળ રહી જઈએ છીએ. જો આ તથ્ય થી આપ પરિચિત હોય તો આજે જ આપણી માતૃભાષા
+		ની જેમ અંગ્રેજી શીખવાની શરૂઆત કરીએ. <strong> All The Best! </strong> </p>
+	</div>
+	</div>
+</section>	
+	<section class="section" id="top">
+	<div class="card">
+	 <figure>
+	 <img src="usentence.jpg">
+	 <figcaption style="text-align:center; color:orangered;"> !! વાક્ય રચના સમજણ !! </figcaption>
+	 </figure>
+	 <div class="card-content">	
+	   <p>ગુજરાતી ભાષામાં કોઈ પણ વાક્ય રચના અનુક્રમે કર્તા (Subject/Doer) + કર્મ (વધારો કરનાર વાક્ય) + ક્રિયાપદ દ્વારા બને છે.
+		જ્યારે અંગ્રેજી ભાષા માં આ ક્રમ અનુક્રમે કર્તા (Subject/Doer) + ક્રિયાપદ + કર્મ (વધારો કરનાર વાક્ય) દ્વારા બને છે. <br>
+		<strong> Subject/Doer (કર્તા) + Verb (ક્રિયાપદ) + Object કર્મ (વધારો કરનાર વાક્ય) </strong> <br> આ ઉપરાંત ધ્યાન માં રાખો કે અંગ્રેજી ભાષામાં 
+		વાતચીત કરતી વખતે સંબોધન તરીકે વર્તમાન કાળ નો ઉપયોગ વધુ કરવો. <br> દા.ત. Hello, Hi!, Good Morning/Afternoon/Evening, I am Rakesh, Okay, All right, Please, Yes Please..</p>
+	<p> દા.ત.I (આઇ) હું જયેશ(Jayesh) am (એમ) છુ <br> હું(1) + જયેશ(2) + છું(3)<br> જ્યારે અંગ્રેજીમાં I(1) + am(3) + Jayesh(2)<br> 
+		I am Jayesh. You are Jayesh. <br> He is Jayesh જેવા વાક્યોથી સમજીએ. </p>
+	</div>
+	</div>		
+  </section>
+  
+  
+  <footer>
+    &copy; 2025 Scholar Academy | All Rights Reserved
+	
+  </footer>
+</body>
+</html>
